@@ -1,0 +1,22 @@
+<!--Multiple hello is print by the button for each time-->
+<html>
+    <title>
+        Add hello
+    </title>
+    <body>
+        <h1>By clicking add button </h1>
+        <p>It will print hello for each button click</p>
+        <button onclick="update()">Add Hello</button>
+        <div id = "hello"></div>
+        <script>
+            var helo = document.getElementById("hello")
+            
+            function update()
+            {
+                var h1 = document.createElement("h1")
+                h1.textContent = "hello"
+                helo.append (h1)
+            }
+        </script>
+    </body>
+</html>

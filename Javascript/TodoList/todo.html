@@ -1,0 +1,32 @@
+<html>
+    <title>
+        Todo List
+    </title>
+    <body>
+        <h1>Todo List</h1>
+        <input id = "input">
+        <button onclick = "add()">Add</button>
+        <ol id = "list">
+            <li>task1
+            <button onclick = "remove(event)">Remove</button>
+        </li>
+        </ol>
+    </body>
+    <script>
+        var ol = document.getElementById("list")
+        var input1 = document.getElementById("input")
+        function add()
+        {
+            var list = document.createElement("li")
+            
+            list.innerHTML = input1.value + "<button onclick = \"remove(event)\">remove</button>"
+            
+            ol.append(list)
+           
+        }
+        function remove(event)
+        {
+            event.target.parentElement.remove()
+        }
+    </script>
+</html>
