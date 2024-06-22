@@ -1,0 +1,26 @@
+<h1>Adding 2 numbers</h1>
+<p>It is a simple project in javascript</p>
+<p>which is used to add 2 numbers</p>
+<input id = "num1" value = 2>
+<input id = "num2" value = 3>
+<button onclick = add()>Total</button>
+<p>Result:</p>
+<p id = "ans">Answer will display here</p>
+
+<script>
+    var box1 = document.getElementById("num1")
+    var box2 = document.getElementById("num2")
+    var ans = document.getElementById("ans")
+    
+
+    function add()
+    {
+        var box1value = Number(box1.value)
+        var box2value = Number(box2.value)
+        var total = box1value + box2value
+
+        ans.textContent = total
+
+    }
+    
+</script>
